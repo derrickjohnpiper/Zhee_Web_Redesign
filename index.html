@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houston After Dark — Private Nightlife Network</title>
+    <meta name="description" content="Houston's private nightlife network. Telegram communities, events, social groups, and underground Houston connections. Find your crowd after dark.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" id="main-nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo" id="nav-logo">
+                <span class="nav__logo-icon">◆</span>
+                <span class="nav__logo-text">HOUSTON<span class="accent">AFTER DARK</span></span>
+            </a>
+            <div class="nav__links" id="nav-links">
+                <a href="#featured" class="nav__link">Communities</a>
+                <a href="#events" class="nav__link">Events</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="groups.html" class="nav__link">Groups Directory</a>
+                <a href="#vip" class="nav__cta" id="nav-cta">Request VIP Access</a>
+            </div>
+            <button class="nav__burger" id="nav-burger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="hero-home.png" alt="Houston skyline at night" class="hero__bg-img" loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__particles" id="hero-particles"></div>
+        <div class="hero__content">
+            <p class="hero__tag">PRIVATE NETWORK • HOUSTON, TX</p>
+            <h1 class="hero__title" id="hero-title">
+                HOUSTON<br>
+                <span class="hero__title-accent">AFTER DARK</span>
+            </h1>
+            <p class="hero__sub">Private Telegram communities, nightlife chats, social groups, and underground Houston connections.</p>
+            <div class="hero__actions">
+                <a href="#featured" class="btn btn--primary" id="hero-join">
+                    <span class="btn__glow"></span>
+                    JOIN THE NETWORK
+                </a>
+                <a href="groups.html" class="btn btn--outline" id="hero-groups">VIEW GROUPS</a>
+            </div>
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-num" data-count="20">0</span><span class="hero__stat-plus">+</span>
+                    <span class="hero__stat-label">Active Groups</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num" data-count="1000">0</span><span class="hero__stat-plus">+</span>
+                    <span class="hero__stat-label">Members</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num" data-count="24">0</span><span class="hero__stat-slash">/</span><span class="hero__stat-num2">7</span>
+                    <span class="hero__stat-label">Active Chats</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll" id="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════ QUICK ACCESS CATEGORIES ═══════════ -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EXPLORE</span>
+                <h2 class="section-title">Find Your Scene</h2>
+            </div>
+            <div class="categories__grid">
+                <a href="groups.html#featured" class="category-card" id="cat-nightlife">
+                    <div class="category-card__icon">🔥</div>
+                    <div class="category-card__glow"></div>
+                    <h3 class="category-card__title">NSA & Hookups</h3>
+                    <p class="category-card__desc">Casual connections and networking</p>
+                    <span class="category-card__arrow">→</span>
+                </a>
+                <a href="groups.html#featured" class="category-card" id="cat-party">
+                    <div class="category-card__icon">🎉</div>
+                    <div class="category-card__glow"></div>
+                    <h3 class="category-card__title">Party Chats</h3>
+                    <p class="category-card__desc">Late-night conversations and meetups</p>
+                    <span class="category-card__arrow">→</span>
+                </a>
+                <a href="groups.html#featured" class="category-card" id="cat-kink">
+                    <div class="category-card__icon">💋</div>
+                    <div class="category-card__glow"></div>
+                    <h3 class="category-card__title">Kink & Fetish</h3>
+                    <p class="category-card__desc">Alternative and kink-friendly spaces</p>
+                    <span class="category-card__arrow">→</span>
+                </a>
+                <a href="groups.html#featured" class="category-card" id="cat-lgbtq">
+                    <div class="category-card__icon">🌈</div>
+                    <div class="category-card__glow"></div>
+                    <h3 class="category-card__title">LGBTQ+ Groups</h3>
+                    <p class="category-card__desc">Inclusive and affirming communities</p>
+                    <span class="category-card__arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FEATURED COMMUNITIES ═══════════ -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FEATURED</span>
+                <h2 class="section-title">Top Communities</h2>
+                <p class="section-sub">The most active Houston Telegram groups in the network</p>
+            </div>
+            <div class="featured__grid">
+                <div class="group-card" id="group-fwb">
+                    <div class="group-card__badge">🔥 HOT</div>
+                    <h3 class="group-card__name">Houston FWB & NSA</h3>
+                    <p class="group-card__desc">A fast-growing Houston networking group for casual connections, socializing, and meeting new people.</p>
+                    <div class="group-card__meta">
+                        <span class="group-card__status"><span class="pulse"></span> Active</span>
+                    </div>
+                    <a href="https://t.me/HTOWN_FWB_AND_NSA" target="_blank" rel="noopener" class="btn btn--telegram" id="join-fwb">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        JOIN ON TELEGRAM
+                    </a>
+                </div>
+                <div class="group-card" id="group-kinky">
+                    <div class="group-card__badge">🎭 POPULAR</div>
+                    <h3 class="group-card__name">Houston Kinky & Freaky</h3>
+                    <p class="group-card__desc">Houston's alternative nightlife and kink-friendly social chat for open-minded adults.</p>
+                    <div class="group-card__meta">
+                        <span class="group-card__status"><span class="pulse"></span> Active</span>
+                    </div>
+                    <a href="https://t.me/HoustonKinkyFreaky" target="_blank" rel="noopener" class="btn btn--telegram" id="join-kinky">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        JOIN ON TELEGRAM
+                    </a>
+                </div>
+                <div class="group-card" id="group-nolabels">
+                    <div class="group-card__badge">💋 TRENDING</div>
+                    <h3 class="group-card__name">No Labels</h3>
+                    <p class="group-card__desc">An open-minded community focused on freedom, expression, and genuine connection.</p>
+                    <div class="group-card__meta">
+                        <span class="group-card__status"><span class="pulse"></span> Active</span>
+                    </div>
+                    <a href="https://t.me/joinchat/AAAAAFS-v-NO7dnykyyj-g" target="_blank" rel="noopener" class="btn btn--telegram" id="join-nolabels">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        JOIN ON TELEGRAM
+                    </a>
+                </div>
+                <div class="group-card" id="group-ts">
+                    <div class="group-card__badge">🌈 INCLUSIVE</div>
+                    <h3 class="group-card__name">Htown TS • CD • Femis & Admirers</h3>
+                    <p class="group-card__desc">Inclusive Houston community for trans members, crossdressers, admirers, and allies.</p>
+                    <div class="group-card__meta">
+                        <span class="group-card__status"><span class="pulse"></span> Active</span>
+                    </div>
+                    <a href="https://t.me/HtownTSCDFemis" target="_blank" rel="noopener" class="btn btn--telegram" id="join-ts">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        JOIN ON TELEGRAM
+                    </a>
+                </div>
+                <div class="group-card" id="group-bbw">
+                    <h3 class="group-card__name">I Love BBW</h3>
+                    <p class="group-card__desc">BBW appreciation and social networking community.</p>
+                    <div class="group-card__meta">
+                        <span class="group-card__status"><span class="pulse"></span> Active</span>
+                    </div>
+                    <a href="https://t.me/ILuvBBWs" target="_blank" rel="noopener" class="btn btn--telegram" id="join-bbw">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        JOIN ON TELEGRAM
+                    </a>
+                </div>
+                <div class="group-card" id="group-promo">
+                    <h3 class="group-card__name">Htown Promo & Social Media</h3>
+                    <p class="group-card__desc">Promote your pages, connect with creators, and expand your Houston network.</p>
+                    <div class="group-card__meta">
+                        <span class="group-card__status"><span class="pulse"></span> Active</span>
+                    </div>
+                    <a href="https://t.me/HTOWN_SEX_CHAT_SOCIALMEDIA_PROMO" target="_blank" rel="noopener" class="btn btn--telegram" id="join-promo">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        JOIN ON TELEGRAM
+                    </a>
+                </div>
+            </div>
+            <div class="featured__cta">
+                <a href="groups.html" class="btn btn--outline btn--lg" id="view-all-groups">VIEW ALL GROUPS →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__text">
+                    <span class="section-tag">WHAT THIS IS</span>
+                    <h2 class="section-title">More Than a Link List</h2>
+                    <p class="about__desc">Houston After Dark is a curated network of Telegram communities for nightlife, social events, private chats, and adult-friendly spaces across Houston and surrounding areas.</p>
+                    <p class="about__desc">Whether you're new in town, looking to meet people, or searching for active local communities — this network helps you connect quickly and privately.</p>
+                    <div class="about__highlights">
+                        <div class="about__highlight">
+                            <span class="about__highlight-icon">🌃</span>
+                            <div>
+                                <strong>Nightlife Updates</strong>
+                                <p>Real-time party and event intel</p>
+                            </div>
+                        </div>
+                        <div class="about__highlight">
+                            <span class="about__highlight-icon">🤝</span>
+                            <div>
+                                <strong>Social Circles</strong>
+                                <p>Find your people in Houston</p>
+                            </div>
+                        </div>
+                        <div class="about__highlight">
+                            <span class="about__highlight-icon">🔒</span>
+                            <div>
+                                <strong>Private & Discreet</strong>
+                                <p>Invite-only access to top groups</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__visual">
+                    <div class="about__glow-orb about__glow-orb--1"></div>
+                    <div class="about__glow-orb about__glow-orb--2"></div>
+                    <div class="about__card-stack">
+                        <div class="about__floating-card about__floating-card--1">
+                            <span>🔥</span> Houston FWB & NSA
+                        </div>
+                        <div class="about__floating-card about__floating-card--2">
+                            <span>🎭</span> Houston Kinky & Freaky
+                        </div>
+                        <div class="about__floating-card about__floating-card--3">
+                            <span>💋</span> No Labels
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ RULES ═══════════ -->
+    <section class="rules" id="rules">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">COMMUNITY</span>
+                <h2 class="section-title">Network Rules</h2>
+                <p class="section-sub">We keep things active, respectful, and drama-free</p>
+            </div>
+            <div class="rules__grid">
+                <div class="rule-card" id="rule-1">
+                    <div class="rule-card__num">01</div>
+                    <h3 class="rule-card__title">Respect Everyone</h3>
+                    <p class="rule-card__desc">No harassment, unwanted DMs, or aggressive behavior toward any member.</p>
+                </div>
+                <div class="rule-card" id="rule-2">
+                    <div class="rule-card__num">02</div>
+                    <h3 class="rule-card__title">No Drama</h3>
+                    <p class="rule-card__desc">Keep the vibe fun, welcoming, and drama-free at all times.</p>
+                </div>
+                <div class="rule-card" id="rule-3">
+                    <div class="rule-card__num">03</div>
+                    <h3 class="rule-card__title">Stay Active</h3>
+                    <p class="rule-card__desc">Introduce yourself when joining and participate in conversations.</p>
+                </div>
+                <div class="rule-card" id="rule-4">
+                    <div class="rule-card__num">04</div>
+                    <h3 class="rule-card__title">Follow the Rules</h3>
+                    <p class="rule-card__desc">Illegal activity or prohibited content results in immediate removal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ EVENTS ═══════════ -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="events__inner">
+                <div class="events__content">
+                    <span class="section-tag">TONIGHT</span>
+                    <h2 class="section-title">What's Happening in Houston</h2>
+                    <p class="events__desc">Stay plugged in to the latest parties, lounges, meetups, and special events across Houston's nightlife scene.</p>
+                    <a href="https://dominiquezhee.wixsite.com/events" class="btn btn--primary btn--lg" id="view-events">
+                        <span class="btn__glow"></span>
+                        VIEW EVENTS
+                    </a>
+                </div>
+                <div class="events__visual">
+                    <div class="events__neon-text">HTX</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ VIP ACCESS ═══════════ -->
+    <section class="vip" id="vip">
+        <div class="container">
+            <div class="vip__card">
+                <div class="vip__glow"></div>
+                <span class="section-tag">EXCLUSIVE</span>
+                <h2 class="section-title">Private Invite Access</h2>
+                <p class="vip__desc">Some communities are invite-only and shared privately with trusted members. Get access to the inner circle.</p>
+                <div class="vip__links">
+                    <a href="https://t.me/+eC9-ALd8FtlmZmVh" target="_blank" rel="noopener" class="btn btn--ghost" id="vip-link-1">Private Group 1 →</a>
+                    <a href="https://t.me/+Uf8oEkD2yD9VW_wR" target="_blank" rel="noopener" class="btn btn--ghost" id="vip-link-2">Private Group 2 →</a>
+                    <a href="https://t.me/+UTqgcRJoHqHQQ6hC" target="_blank" rel="noopener" class="btn btn--ghost" id="vip-link-3">Private Group 3 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span class="nav__logo-text">HOUSTON<span class="accent">AFTER DARK</span></span>
+                    </div>
+                    <p class="footer__tagline">Houston's Private Nightlife Network</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigate</h4>
+                    <a href="#featured" class="footer__link">Communities</a>
+                    <a href="#events" class="footer__link">Events</a>
+                    <a href="groups.html" class="footer__link">Groups Directory</a>
+                    <a href="#vip" class="footer__link">VIP Access</a>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Connect</h4>
+                    <a href="https://www.instagram.com/DominiqueZhee2" target="_blank" rel="noopener" class="footer__link">Instagram</a>
+                    <a href="https://www.facebook.com/pinky.galore37" target="_blank" rel="noopener" class="footer__link">Facebook</a>
+                    <a href="https://www.twitter.com/Zhee_Dominique" target="_blank" rel="noopener" class="footer__link">Twitter</a>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Contact</h4>
+                    <p class="footer__text">For event promotion, partnerships, or community questions.</p>
+                    <a href="mailto:info@mysite.com" class="footer__link">📧 info@mysite.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Houston After Dark © 2026 — Private Community Network</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
